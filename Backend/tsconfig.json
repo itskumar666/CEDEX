@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "es6",
     "module": "commonjs",
-    "rootDir": "./src",
+    "rootDir": "./", // or wherever your files are located
     "outDir": "./dist",
     "strict": true,
     "esModuleInterop": true,
@@ -13,6 +13,6 @@
     "sourceMap": true,
     "typeRoots": ["./node_modules/@types", "./src/@types"]
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "routes/**/*","controller/**/*","middleware/**/*","prisma/**/*"], // Include other directories if necessary
   "exclude": ["node_modules", "**/*.spec.ts"]
 }
